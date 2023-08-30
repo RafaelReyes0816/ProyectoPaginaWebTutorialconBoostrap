@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="animacion/animate.css">
+    <style>
+        .body{
+            background-color: black;
+            color: white;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="wow bounceInUp">
+        <div class="bg-dark container-fluid body">
+            <header>
+                <div class="container font-monospace text-light">
+                         <h2 class="text-center text-warning">Aquí puedes dejar tu mensaje para que me pueda comunicar más rápido contigo</h2>
+                </div>
+            </header>
+            <section>
+                <div class="container">
+                    <form action="/my-handling-form-page" method="post">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nombre-apellido">Nombre y Apellido</label>
+                                    <input type="text" class="form-control" id="nombre-apellido" name="nombre-apellido" placeholder="Nombre y Apellido" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="correo">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Introduce tu Correo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                                    <input type="date" class="form-control" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="mensaje">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-info">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h3 class="text-center font-monospace text-info">También puedes escribirme por redes sociales aquí te las dejo</h3>
+                    <nav class="text-center font-monospace p-3 m-3">
+                        <a href="https://github.com/RafaelReyes0816" target="_blank" class="btn btn-info">GitHub</a>
+                        <img src="img/logogithub2.png" class="img-fluid rounded-circle img-thumbnail" alt="">
+                        <a href="https://twitter.com/RafaelR10996376" target="_blank" class="btn btn-info">Twitter</a>
+                        <img src="img/logotwitter2.jpg" class="img-fluid rounded-circle img-thumbnail" alt="">
+                        <a href="https://discordapp.com/users/385871294316412940" target="_blank" class="btn btn-info">Discord</a>
+                        <img src="img/logodiscord2.png" class="img-fluid rounded-circle img-thumbnail" alt="">
+                        <a href="https://steamcommunity.com/profiles/76561198308061847/" target="_blank" class="btn btn-info">Steam</a>
+                        <img src="img/logosteam2.png" class="img-fluid rounded-circle img-thumbnail" alt="">
+                    </nav>
+                </div>
+            </section>
+            <footer>
+                <div class="container text-center">
+                    <img src="img/logocsgo.jpg" class="img-fluid rounded-circle img-thumbnail" alt="Logo de CS:GO">
+                    <h1 class="text-center text-warning">&copy; 2023 Juan Rafael Reyes Burgos. Todos los derechos reservados.</h1>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="animacion/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+</body>
+</html>
